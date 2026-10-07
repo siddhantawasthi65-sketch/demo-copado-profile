@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>No_of_Students__c</fullName>
+        <externalId>false</externalId>
+        <label>No of Students</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>student__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>student</label>
+        <referenceTo>students__c</referenceTo>
+        <relationshipLabel>Classes</relationshipLabel>
+        <relationshipName>Classes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>
